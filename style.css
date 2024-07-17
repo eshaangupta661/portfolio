@@ -1,0 +1,308 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Alex+Brush&family=Barlow+Condensed&family=Lato:wght@100;300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+body {
+padding: 0;
+margin: 0;
+scroll-behavior: smooth;
+}
+
+.main {
+height: 100vh;
+width: 100%;
+background-size: cover;
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 7)),
+  url(bg.jpg);
+}
+
+@keyframes fadein {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+}
+
+.heading {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-family: "Lato", sans-serif;
+color: rgb(255, 248, 239);
+letter-spacing: 2px;
+font-size: 15vh;
+padding-bottom: 100px;
+animation: fadeIn 1s ease-in-out;
+}
+
+nav{
+    background: black;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul{
+float: right;
+margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px
+
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+
+
+}
+a.active,a:hover{
+  background: #A9A9A9;
+  transition: 0.5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+} 
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100% ;
+    height: 100vh;
+    background: #301934;
+    top: 80px;
+    left: -150%;
+    text-align: center;
+    transition: all .5s;
+
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #A9A9A9;
+  }
+  #check:checked ~ ul{
+    left:0; }
+     
+}
+
+section{
+  background: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+.container {
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100%;
+background: url(wall1.jpg);
+background-size: cover;
+}
+
+.images {
+padding: 100px;
+height: 65vh;
+width: auto;
+filter: drop-shadow(0.1rem 0.3rem 2rem rgba(0, 0, 0, 0.8));
+margin-bottom: 20px;
+}
+
+p {
+padding-right: 100px;
+font-size: 2.5vh;
+font-family: "Lato", sans-serif;
+letter-spacing: 2px;
+line-height: 30px;
+}
+
+h1 {
+font-size: 5.8vh;
+font-family: "Barlow Condensed", sans-serif;
+}
+
+.container2{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: url(wall2.jpg);
+  background-size: cover;
+}
+
+.image2{
+  padding: 100px;
+  height: 55vh;
+  width: auto;
+  filter: drop-shadow(0.1rem 0.3rem 2rem rgba(0, 0, 0, 0.8));
+  margin-bottom: 20px;
+}
+
+.container2 .info h1{
+  padding-left: 40px;
+  color: #002147;
+}
+
+.container2 .info p{
+  padding-left: 40px;
+  padding-right: 10px;
+  color: #002147;
+}
+
+.container3{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: url(wall3.jpg);
+  background-size: cover;
+}
+
+.images3{
+  padding: 100px;
+  height: 55vh;
+  width: auto;
+  filter: drop-shadow(0.1rem 0.3rem 2rem rgba(0, 0, 0, 0.8));
+  margin-bottom: 20px;
+}
+
+.footer{
+  background-color: black;
+  height: 43px;
+  padding-top: 10px;
+  color: white;
+  margin: 0;
+   font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+span{
+  color: cyan;
+}
+
+@media screen and (max-width: 768px) {
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.heading {
+  font-size: 3vh;
+  letter-spacing: 2px;
+
+}
+
+
+.image2,.images,.images3{
+  height: 200px;
+  width: auto;
+  padding: 10px;
+}
+
+p {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 2vh;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 4vh;
+  padding: 20px;
+}
+
+.pics,.container,.container2,.container3,.info{
+  display: block;
+  text-align: center;
+}
+
+.container4 .info p,.container4 .info h1{
+  padding: 20px;
+}
+h2{
+  margin-top: 30px;
+}
+
+.heading{
+  font-size: 7vh;
+}
+
+.container2 .info p {
+  padding: 20px;
+}
+.container3 .info h1{
+  padding: 20px;
+  padding-right: 40px;
+  text-align: center;
+}
+.container2,.container{
+  padding-bottom: 60px;
+}
+.container,.container3{
+  padding-top: 20px;
+}
+.container3{
+  padding-bottom: 0px;
+}
+h2{
+  font-size: 3vh;
+}
+}
